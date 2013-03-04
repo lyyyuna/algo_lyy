@@ -19,6 +19,7 @@
 # project file
 *.cbp
 *.depend
+*.layout
 
 bin
 obj
