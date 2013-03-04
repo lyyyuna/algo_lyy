@@ -12,7 +12,8 @@ static void max_heapify(int *array, int heap_size, int i)
     {
         largest = LEFT(i);
     }
-    if ((array[RIGHT(i)]>=array[i]) && (RIGHT(i)<heap_size))
+    /* the array[largest] */
+    if ((array[RIGHT(i)]>=array[largest]) && (RIGHT(i)<heap_size))
     {
         largest = RIGHT(i);
     }
