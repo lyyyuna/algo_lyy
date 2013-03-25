@@ -1,0 +1,2 @@
+src_files = Split('quicksort.c test.c')
+Program('quicksort', src_files, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
