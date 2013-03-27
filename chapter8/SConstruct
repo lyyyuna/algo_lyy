@@ -1,0 +1,2 @@
+src_files = Split('countingsort.c test.c')
+Program('countingsort', src_files, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
