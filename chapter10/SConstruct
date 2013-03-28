@@ -1,0 +1,2 @@
+src1 = Split('stack.c stack_test.c')
+Program('stacktest', src1, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
