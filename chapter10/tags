@@ -4,11 +4,38 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+LIST_H_INCLUDED	list.h	2;"	d
+Node	list.h	/^typedef struct Node_struct Node;$/;"	t	typeref:struct:Node_struct
+Node_delete	list.c	/^int Node_delete(Node **Headptr, int key)$/;"	f
+Node_insert	list.c	/^int Node_insert(Node **Headptr, int key)$/;"	f
+Node_struct	list.h	/^struct Node_struct$/;"	s
+QUEUE_H_INCLUDED	queue.h	2;"	d
+SIZE	queue_test.c	3;"	d	file:
+SIZE	stack_test.c	3;"	d	file:
 STACK_H_INCLUDED	stack.h	2;"	d
+array	queue.h	/^    int *array;$/;"	m	struct:__anon2
 array	stack.h	/^    int *array;$/;"	m	struct:__anon1
+elements	queue.h	/^    int elements;$/;"	m	struct:__anon2
+head	queue.h	/^    int head;$/;"	m	struct:__anon2
 index	stack.h	/^    int index;$/;"	m	struct:__anon1
+key	list.h	/^    int key;$/;"	m	struct:Node_struct
+list_delete	list.c	/^void list_delete(Node **Headptr)$/;"	f
+list_init	list.c	/^Node *list_init(int key)$/;"	f
+list_print	list.c	/^void list_print(Node *Head)$/;"	f
+list_search	list.c	/^Node *list_search(Node *Head, int key)$/;"	f
+main	listtest.c	/^int main(void)$/;"	f
+main	queue_test.c	/^int main(void)$/;"	f
+main	stack_test.c	/^int main(void)$/;"	f
+next	list.h	/^    Node *next;$/;"	m	struct:Node_struct
 pop	stack.c	/^int pop(stack *s)$/;"	f
+prev	list.h	/^    Node *prev;$/;"	m	struct:Node_struct
 push	stack.c	/^int push(stack *s, int x)$/;"	f
+queue	queue.h	/^}queue;$/;"	t	typeref:struct:__anon2
+queue_delete	queue.c	/^int queue_delete(queue *Q)$/;"	f
+queue_destroy	queue.c	/^void queue_destroy(queue *Q)$/;"	f
+queue_enter	queue.c	/^void queue_enter(queue *Q, int x)$/;"	f
+queue_init	queue.c	/^int queue_init(queue *Q, int size)$/;"	f
+size	queue.h	/^    int size;$/;"	m	struct:__anon2
 size	stack.h	/^    int size;$/;"	m	struct:__anon1
 stack	stack.h	/^}stack;$/;"	t	typeref:struct:__anon1
 stack_delete	stack.c	/^void stack_delete(stack *s)$/;"	f
@@ -16,3 +43,4 @@ stack_empty	stack.c	/^int stack_empty(stack *s)$/;"	f
 stack_full	stack.c	/^int stack_full(stack *s)$/;"	f
 stack_init	stack.c	/^int stack_init(stack *s, int size)$/;"	f
 stack_realloc	stack.c	/^static int stack_realloc(stack *s)$/;"	f	file:
+tail	queue.h	/^    int tail;$/;"	m	struct:__anon2

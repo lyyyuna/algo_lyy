@@ -4,3 +4,6 @@ Program('stacktest', src1, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
 src2 = Split('queue.c queue_test.c')
 Program('queuetest', src2, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
 
+src3 = Split('list.c listtest.c')
+Program('listtest', src3, CPPPATH='.', AFLAGS=' -g', CFLAGS=' -g')
+
